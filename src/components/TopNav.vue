@@ -49,14 +49,25 @@ export default {
     }
   }
 }
+.toggleAside{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
 @media (max-width: 500px) {
   .menu li{
-      display: none;
-    }
+    display: none;
+  }
   .logo{
     margin: 0 auto;
   }
+  .toggleAside{
+    display: inline-block;
+  }
 }
-
-
 </style>
