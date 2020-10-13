@@ -1,7 +1,7 @@
 <template>
-    <button>
-      <span></span>
-    </button>
+  <button>
+    <span></span>
+  </button>
 </template>
 
 <style lang="scss" scoped>
@@ -15,7 +15,8 @@ button {
   border-radius: $h/2;
   position: relative;
 }
-span{
+
+span {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -25,4 +26,7 @@ span{
   border-radius: $h2/2;
 }
 
+button:hover >span {
+  left: calc(100% - #{$h2} - 2px);
+}
 </style>
