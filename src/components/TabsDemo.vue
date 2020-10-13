@@ -1,11 +1,20 @@
 <template>
+  <div>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
+    <p>tabs的文档</p>
 
+  </div>
 </template>
-
-<script lang="ts">
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>

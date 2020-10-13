@@ -1,11 +1,20 @@
 <template>
+  <div>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
+    <p>button的文档</p>
 
+  </div>
 </template>
-
-<script lang="ts">
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
