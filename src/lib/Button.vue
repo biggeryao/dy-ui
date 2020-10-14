@@ -87,17 +87,15 @@ $radius: 4px;
       background: darken(white, 5%);
     }
   }
-  &.dy-theme-button{
-    &.dy-size-big{
-      font-size: 24px;
-      height: 48px;
-      padding: 0 16px
-    }
-    &.dy-size-small{
-      font-size: 12px;
-      height: 20px;
-      padding: 0 4px;
-    }
+  &.dy-size-big {
+    font-size: 24px;
+    height: 48px;
+    padding: 0 16px;
+  }
+  &.dy-size-small {
+    font-size: 12px;
+    height: 20px;
+    padding: 0 4px;
   }
 }
 </style>
