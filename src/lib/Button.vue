@@ -1,5 +1,5 @@
 <template>
-  <button class="dy-button" :class="{[`theme-${theme}`]:theme}">
+  <button class="dy-button" :class="{[`dy-theme-${theme}`]:theme}">
     <slot/>
   </button>
 </template>

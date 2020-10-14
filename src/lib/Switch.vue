@@ -1,5 +1,5 @@
 <template>
-  <button :class="{checked:value}" @click="toggle">
+  <button class="dy-switch" :class="{'dy-checked':value}" @click="toggle">
     <span ></span>
 
   </button>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" >
 $h: 22px;
 $h2: $h - 4px;
-button {
+.dy-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -43,19 +43,19 @@ span {
   border-radius: $h2/2;
   transition: left 250ms;
 }
-button.checked{
+.dy-switch.dy-checked{
   background-color: blue;
 }
-button.checked span{
+.dy-switch.dy-checked span{
   left: calc(100% - #{$h2} - 2px);
 }
-button:focus{
+.dy-switch:focus{
   outline: none;
 }
-button:active{
+.dy-switch:active{
   > span {width: $h2 + 4px;}
 }
-button.checked:active{
+.dy-switch.dy-checked:active{
   > span {width: $h2 + 4px; margin-left: -4px;}
 }
 </style>
