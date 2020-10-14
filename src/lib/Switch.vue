@@ -1,18 +1,22 @@
 <template>
-  <button :class="{checked:checked}" @click="toggle">
+  <button :class="{checked:value}" @click="toggle">
     <span ></span>
+
   </button>
+  <div>{{value}}</div>
 </template>
 
 <script lang="ts">
 import {ref} from 'vue'
 export default {
-  setup(){
-    const checked=ref(true)
-    const toggle=function (){
-      checked.value=!checked.value
+  props:{
+    value:Boolean
+  },
+  setup(props,context){
+    const toggle=()=>{
+        context.emit('input',!props.value)
     }
-    return{checked,toggle}
+    return{toggle}
   }
 }
 </script>
@@ -47,5 +51,11 @@ button.checked span{
 }
 button:focus{
   outline: none;
+}
+button:active{
+  > span {width: $h2 + 4px;}
+}
+button.checked:active{
+  > span {width: $h2 + 4px; margin-left: -4px;}
 }
 </style>
