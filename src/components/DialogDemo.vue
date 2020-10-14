@@ -5,11 +5,15 @@
       :close-on-click-overlay="false"
       :ok="f1"
       :cancel="f2"
-      :title="title">
-    <div>
-      <p>123</p>
-      <p>456</p>
-    </div>
+     >
+    <template v-slot:title>
+      <strong>加粗的标题</strong>
+    </template>
+    <template v-slot:content>
+      <strong>加粗的内容</strong>
+      <p>正常的内容</p>
+    </template>
+
   </Dialog>
 
 
@@ -25,7 +29,6 @@ export default {
     Dialog, Button
   },
   setup(){
-    const title='提示'
     const x=ref(false)
     const toggle=()=>{
       x.value=!x.value
@@ -36,7 +39,7 @@ export default {
     const f2=()=>{
     }
     return {
-      x,toggle,f1,f2,title
+      x,toggle,f1,f2
     }
   }
 };

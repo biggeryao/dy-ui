@@ -3,9 +3,13 @@
     <div class="dy-dialog-overlay" @click="onClickOverlay"></div>
     <div class="dy-dialog-wrapper">
       <div class="dy-dialog">
-        <header>{{title}} <span @click="close" class="dy-dialog-close"></span></header>
+        <header>
+          <slot name="title"/>
+          <span @click="close" class="dy-dialog-close">
+          </span>
+        </header>
         <main>
-          <slot/>
+          <slot name="content"/>
         </main>
         <footer>
           <Button level="main"  @click="ok">OK</Button>
@@ -34,10 +38,6 @@ export default {
     },
     cancel:{
       type:Function
-    },
-    title:{
-      type:String,
-      default:'标题'
     }
   },
   components: {
