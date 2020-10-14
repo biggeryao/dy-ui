@@ -5,7 +5,13 @@
       :close-on-click-overlay="false"
       :ok="f1"
       :cancel="f2"
-  />
+      :title="title">
+    <div>
+      <p>123</p>
+      <p>456</p>
+    </div>
+  </Dialog>
+
 
 </template>
 
@@ -18,7 +24,8 @@ export default {
   components: {
     Dialog, Button
   },
-  setup(props,context){
+  setup(){
+    const title='提示'
     const x=ref(false)
     const toggle=()=>{
       x.value=!x.value
@@ -29,7 +36,7 @@ export default {
     const f2=()=>{
     }
     return {
-      x,toggle,f1,f2
+      x,toggle,f1,f2,title
     }
   }
 };
