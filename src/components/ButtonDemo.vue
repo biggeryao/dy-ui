@@ -1,22 +1,23 @@
 <template>
   <div>
-    <Button
-      @click="a"
-    @focus="a"
-    @mouseover="a"
->123</Button>
+    <Button>你好</Button>
+    <Button theme="button">你好</Button>
+    <Button theme="link">你好</Button>
+    <Button theme="text">你好</Button>
+
   </div>
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue'
-export default {
-  components:{Button},
-  setup(){
-    const a=()=>{
+import Button from '../lib/Button.vue';
 
-    }
-    return{a}
+export default {
+  components: {Button},
+  setup() {
+    const a = () => {
+
+    };
+    return {a};
   }
 
 };
