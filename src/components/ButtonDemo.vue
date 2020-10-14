@@ -4,7 +4,7 @@
       @click="a"
     @focus="a"
     @mouseover="a"
-    size="small">123</Button>
+>123</Button>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   components:{Button},
   setup(){
     const a=()=>{
-      console.log(1);
+
     }
     return{a}
   }
