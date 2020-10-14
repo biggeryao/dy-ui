@@ -1,20 +1,12 @@
 <template>
   <div>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-    <p>button的文档</p>
-
+    <Button>123</Button>
   </div>
 </template>
+
+<script lang="ts">
+import Button from '../lib/Button.vue'
+export default {
+  components:Button
+};
+</script>
