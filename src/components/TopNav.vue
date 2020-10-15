@@ -86,9 +86,6 @@ $color: #007974;
 }
 
 @media (max-width: 500px) {
-  .menu li {
-    display: none;
-  }
   .logo {
     margin: 0 auto;
   }
