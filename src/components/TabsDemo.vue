@@ -1,6 +1,9 @@
 <template>
   <div>
     Tab示例
+  <Tabs>
+    <Tab></Tab>
+  </Tabs>
   </div>
 </template>
 
