@@ -2,7 +2,8 @@
   <div>
     Tab示例
   <Tabs>
-    <Tab></Tab>
+    <Tab title="导航一">内容一</Tab>
+    <Tab title="导航二">内容一</Tab>
   </Tabs>
   </div>
 </template>
