@@ -1,9 +1,7 @@
 <template>
-  <button class="dy-switch" :class="{'dy-checked':value}" @click="toggle">
-    <span ></span>
-
-  </button>
-  <div>{{value}}</div>
+    <button class="dy-switch" :class="{'dy-checked':value}" @click="toggle">
+      <span ></span>
+    </button>
 </template>
 
 <script lang="ts">
@@ -31,6 +29,7 @@ $h2: $h - 4px;
   background-color: gray;
   border-radius: $h/2;
   position: relative;
+
 }
 
 span {
