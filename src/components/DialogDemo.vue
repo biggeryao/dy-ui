@@ -1,6 +1,6 @@
 <template>
+  <h1>示例一</h1>
   <Button @click="toggle">toggle</Button>
-  <div style="position:relative; z-index: 1">
     <Dialog
         v-model:visible="x"
         :close-on-click-overlay="false"
@@ -14,15 +14,9 @@
         <strong>加粗的内容</strong>
         <p>正常的内容</p>
       </template>
-
     </Dialog>
-  </div>
-  <div style="width: 200px;height: 200px;background-color: red;
-  position: relative;z-index: 2">
-
-  </div>
-
-
+  <h1>示例二</h1>
+  <Button @click="showDialog">toggle</Button>
 </template>
 
 
@@ -30,7 +24,7 @@
 import Dialog from '../lib/Dialog.vue';
 import Button from '../lib/Button.vue';
 import {ref} from 'vue';
-
+import {openDialog} from '../lib/openDialog'
 export default {
   components: {
     Dialog, Button
@@ -45,8 +39,11 @@ export default {
     };
     const f2 = () => {
     };
+    const showDialog=()=>{
+      openDialog({title:'标题',content:'你好不好'})
+    }
     return {
-      x, toggle, f1, f2
+      x, toggle, f1, f2,showDialog
     };
   }
 };
