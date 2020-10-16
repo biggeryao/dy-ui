@@ -14,9 +14,6 @@ export default {
   components: {
    Demo
   },
-  props:{
-    title:String
-  },
   setup() {
     return {
       Dialog1Demo,Dialog2Demo
