@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>Button 示例</h1>
-    <Demo :component="Button1Demo" title=""/>
-    <Demo :component="Button2Demo"/>
-    <Demo :component="Button3Demo"/>
-    <Demo :component="Button4Demo"/>
-    <Demo :component="Button5Demo"/>
+    <Demo :component="Button1Demo" title="常规使用"/>
+    <Demo :component="Button2Demo" title="支持size"/>
+    <Demo :component="Button3Demo" title="支持level"/>
+    <Demo :component="Button4Demo" title="支持disabled"/>
+    <Demo :component="Button5Demo" title="支持加载中"/>
   </div>
 </template>
 
