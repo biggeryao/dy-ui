@@ -5,27 +5,32 @@
       <div class="dy-dialog-wrapper">
         <div class="dy-dialog">
           <header>
-            <slot name="title"/>
-            <span @click="close" class="dy-dialog-close">
-          </span>
+            <slot name="title" />
+            <span @click="close" class="dy-dialog-close"></span>
           </header>
           <main>
-            <slot name="content"/>
+            <slot name="content" />
           </main>
           <footer>
-            <Button level="main" @click="ok">OK</Button>
-            <Button @click="cancel">Cancel</Button>
+            <Button level="main" @click="onClickOk">OK</Button>
+            <Button @click="onClickCancel">Cancel</Button>
           </footer>
         </div>
       </div>
     </Teleport>
-
   </template>
-
 </template>
-<script lang="ts">
-import Button from '../lib/Button.vue';
 
+<script lang="ts" setup="props, context">
+import { SetupContext } from 'vue';
+import Button from "./Button.vue";
+declare const props: {
+  visible: boolean;
+  closeOnClickOverlay: boolean;
+  ok: () => boolean;
+  cancel: () => void
+}
+declare const context: SetupContext
 export default {
   props: {
     visible: {
@@ -44,30 +49,26 @@ export default {
     }
   },
   components: {
-    Button
+    Button,
   },
-  setup(props, context) {
-    const close = () => {
-      context.emit('update:visible', false);
-    };
-    const onClickOverlay = () => {
-      if (props.closeOnClickOverlay) {
-        close();
-      }
-    };
-    const ok = () => {
-      if (props.ok?.() !== false) {
-        close();
-      }
-    };
-    const cancel = () => {
-      context.emit('cancel');
-      close();
-    };
-    return {close, onClickOverlay, ok, cancel};
-  }
-
 };
+export const close = () => {
+  context.emit('update:visible', false)
+}
+export const onClickOverlay = () => {
+  if (props.closeOnClickOverlay) {
+    close()
+  }
+}
+export const onClickOk = () => {
+  if (props.ok?.() !== false) {
+    close()
+  }
+}
+export const onClickCancel = () => {
+  props.cancel?.()
+  close()
+}
 </script>
 <style lang="scss">
 $radius: 4px;

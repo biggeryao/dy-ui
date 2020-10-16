@@ -1,3 +1,6 @@
+<demo>
+常规使用
+</demo>
 <template>
   <div>
     <Button @click="toggle">打开对话框</Button>
@@ -19,6 +22,9 @@ import Button from '../lib/Button.vue'
 import {
   ref
 } from 'vue'
+import {
+  openDialog
+} from '../lib/openDialog'
 export default {
   components: {
     Dialog,
