@@ -1,7 +1,7 @@
 <template>
   <h1>Dialog 示例</h1>
-  <Demo :component="Dialog1Demo" />
-  <Demo :component="Dialog2Demo" />
+  <Demo :component="Dialog1Demo" title="常规使用"/>
+  <Demo :component="Dialog2Demo" title="一键打开 Dialog"/>
 
 </template>
 
@@ -13,6 +13,9 @@ import Dialog2Demo from './Dialog2.demo.vue';
 export default {
   components: {
    Demo
+  },
+  props:{
+    title:String
   },
   setup() {
     return {

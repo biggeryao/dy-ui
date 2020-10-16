@@ -1,6 +1,3 @@
-<demo>
-一键打开 Dialog
-</demo>
 <template>
   <div>
     <Button @click="showDialog">打开对话框</Button>
