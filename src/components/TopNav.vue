@@ -92,5 +92,8 @@ $color: #007974;
   .toggleAside {
     display: inline-block;
   }
+  .menu li{
+    display: none;
+  }
 }
 </style>

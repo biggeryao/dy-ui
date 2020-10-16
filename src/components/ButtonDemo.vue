@@ -1,40 +1,36 @@
 <template>
   <div>
-    <Button>你好</Button>
-    <Button theme="button">你好</Button>
-    <Button theme="link">你好</Button>
-    <Button theme="text">你好</Button>
-  </div>
-  <div>
-    <div>
-      <Button size="big">大大大</Button>
-      <Button>普普通</Button>
-      <Button size="small">小小小</Button>
-    </div>
-    <div>
-      <Button theme="link" size="big">大大大</Button>
-      <Button theme="link">普普通</Button>
-      <Button size="small" theme="link">小小小</Button>
-    </div>
-    <div>
-      <Button size="big" theme="text">大大大</Button>
-      <Button theme="text">普普通</Button>
-      <Button size="small" theme="text">小小小</Button>
-    </div>
+    <h1>Button 示例</h1>
+    <Demo :component="Button1Demo" title=""/>
+    <Demo :component="Button2Demo"/>
+    <Demo :component="Button3Demo"/>
+    <Demo :component="Button4Demo"/>
+    <Demo :component="Button5Demo"/>
   </div>
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue';
+
+import Demo from './Demo.vue';
+import Button1Demo from './Button1.demo.vue';
+import Button2Demo from './Button2.demo.vue';
+import Button3Demo from './Button3.demo.vue';
+import Button4Demo from './Button4.demo.vue';
+import Button5Demo from './Button5.demo.vue';
 
 export default {
-  components: {Button},
+
+  components: {
+    Demo
+  },
   setup() {
-    const a = () => {
-
-    };
-    return {a};
+    return {
+      Button1Demo,
+      Button2Demo,
+      Button3Demo,
+      Button4Demo,
+      Button5Demo
+    }
   }
-
-};
+}
 </script>
