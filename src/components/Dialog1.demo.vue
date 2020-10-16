@@ -19,7 +19,6 @@ import Button from '../lib/Button.vue'
 import {
   ref
 } from 'vue'
-
 export default {
   components: {
     Dialog,
