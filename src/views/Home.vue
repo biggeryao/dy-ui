@@ -2,12 +2,13 @@
   <div class="topnavAndBanner">
     <Topnav/>
     <div class="banner">
-      <h1>轱辘UI</h1>
-      <h2>一个厉害的 UI 框架</h2>
+      <h1>芒果UI</h1>
+      <h2>一个走心的 UI 框架</h2>
       <p class="actions">
-        <a href="https://github.com">GitHub</a>
+        <a href="https://github.com/biggeryao/dy-ui">GitHub</a>
         <router-link to="/doc">开始</router-link>
       </p>
+
     </div>
   </div>
   <div class="features">
@@ -17,7 +18,7 @@
           <use xlink:href="#icon-vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
-        <p>骄傲地使用了 Vue 3 Composition API</p>
+        <p>使用了 Vue 3 Composition API</p>
       </li>
       <li>
         <svg>
@@ -51,7 +52,9 @@ $green: #02bcb0;
 $border-radius: 4px;
 $color: #007974;
 .topnavAndBanner {
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  background: #f2994a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2994a, #f2c94c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2994a, #f2c94c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
