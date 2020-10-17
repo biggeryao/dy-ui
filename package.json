@@ -2,7 +2,7 @@
   "name": "mangguoui",
   "version": "0.0.1",
   "files": ["dist/lib/*"],
-  "main": "dist/lib/mongo.js",
+  "main": "dist/lib/mango.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -27,3 +27,4 @@
     "vite": "^1.0.0-rc.1"
   }
 }
+
